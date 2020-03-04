@@ -1,31 +1,26 @@
-      /*google.charts.load('current', {'packages':['bar']});
-      google.charts.setOnLoadCallback(drawChart);
 
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Month', 'Used Food', 'Used Drinks'],
-          ['Feb', 10, 14],
-          ['Mar', 18, 16],
-          ['Apr', 27, 23],
-          ['May', 35, 34],
-          ['Jun', 41, 39],
-          ['Jul', 52, 43]
-        ]);
 
-        var options = {
-          chart: {
-            
-          },
-          bars: 'vertical',
-          vAxis: {format: 'decimal'},
-          height: 200,
-          colors: ['#39EAAD', '#006CD4']
-        };
-
-        var chart = new google.charts.Bar(document.getElementById('chart_div_food'));
-
-        chart.draw(data, google.charts.Bar.convertOptions(options));
-       
-      }*/
-
-    
+    new Chart(document.getElementById("bar-chart-grouped"), {
+    type: 'bar',
+    data: {
+      labels: ["Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+      datasets: [
+        {
+          label: "Used Food",
+          backgroundColor: "#39EAAD",
+          data: [10,18,27,35,41,52]
+        }, {
+          label: "Used Drinks",
+          backgroundColor: "#006CD4",
+          defaultFontSize: 12,
+          data: [14,16,23,34,39,43]
+        }
+      ]
+    },
+    options: {
+      title: {
+        display: false,
+        text: 'How much % of the food and drinks is left?'
+      }
+    }
+});

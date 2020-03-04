@@ -1,21 +1,18 @@
-/*google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart);
 
-      function drawChart() {
-
-        var data = google.visualization.arrayToDataTable([
-          ['Task', 'Hours per Day'],
-          ['Pasta pesto',     25],
-          ['Tomato soup',      30],
-          ['Caprese salad',  30],
-          ['Hamburger & fries',  15],
-        ]);
-
-        var options = {
-         
-        };
-
-        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-
-        chart.draw(data, options);
-      }*/
+      new Chart(document.getElementById("pie-chart"), {
+        type: 'pie',
+        data: {
+          labels: ["Pasta pesto", "Tomato soup", "Caprese salad", "Hamburger & fries"],
+          datasets: [{
+            label: "Population (millions)",
+            backgroundColor: ["#28ECAC", "#0069D8","white","#A7F6FF"],
+            data: [25,30,30,15]
+          }]
+        },
+        options: {
+          title: {
+            display: true,
+            text: ''
+          }
+        }
+    });

@@ -1,23 +1,20 @@
-/*google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart);
+
+new Chart(document.getElementById("doughnut-chart"), {
+    type: 'doughnut',
+    data: {
+      /*labels: ["Completed", "Uncomleted"],*/
+      datasets: [
+        {
+          label: "Completed Journey",
+          backgroundColor: ["#39EAAD", "white"],
+          data: [74,26]
+        }
+      ]
+    },
+    options: {
       
-      function drawChart() {
+    }
+});
 
-        var data = google.visualization.arrayToDataTable([
-          ['Percentage', 'Travel Progress'],
-          ['Completed part of the Journey', 74],
-          ['Uncompleted part of the Journey', 26]
-        ]);
 
-        var options = {
-          pieHole: 0.5,
-          pieSliceTextStyle: {
-          color: 'black',
-          },
-          legend: 'none'
-          
-        };
-
-        var chart = new google.visualization.PieChart(document.getElementById('donut_single'));
-        chart.draw(data, options);}*/
 

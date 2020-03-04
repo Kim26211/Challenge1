@@ -7,11 +7,6 @@
 		<link type="text/css" href="styles/grid-layout.css" rel="stylesheet" />
 		<link type="text/css" href="styles/main.css" rel="stylesheet" />
 		<link type="text/css" href="styles/data-styles.css" rel="stylesheet" />
-		<!--<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>-->
-		<script src="scripts/travelled_distance.js"></script>
-		<script src="scripts/pie_donut.js"></script>
-		<script src="scripts/food_drinks.js"></script>
-		<script src="scripts/dinner.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&display=swap" rel="stylesheet">
 	</head>
 	<body>
@@ -24,29 +19,37 @@
 			<div class="grid-item main1">
 				<h3>Travel Progress</h3>
 				<hr class="lines">
-				<!--<div id="chart_div"></div>-->
+				<canvas id="line-chart" class="travel"></canvas>
 			</div>
 			<div class="grid-item main2">
-				<div class="sub-container">
-					<div class="sub-item1">
-						<h4>10345 km</h4>
-						<p class="km-tekst">left to go before arrival on the red planet.</p></br>
-						<div class="dag">
-					    <p>Dag 132</p></div>
+				<div class="wrapper">
+					<div class="row">
+						<div class="column">
+							<div class="column-1">
+								<h4>10345 km</h4>
+								<div class="dag"><p>Dag 132</p></div>
+								<p class="km-tekst">left to go before arrival on the red planet.</p></br>
+								</div> 
+							</div>
+						</div>
+						<div class="column">
+							<div class="column-2">
+							<canvas id="doughnut-chart" class="doughnut" ></canvas>
+							</div>	
+						</div>
 					</div>
-				<!--<div id="donut_single" class="sub-item2"></div>-->
 				</div>
 			</div>
 			<div class="grid-item main3">
 				<h3>Storage</h3>
 				<h3 class="food">Food & Drinks</h3>
 				<hr class="lines">
-				<!--<div id="chart_div_food"></div>-->
+				<canvas id="bar-chart-grouped" class="food"></canvas>
 			</div>
 			<div class="grid-item main4">
 				<h3>Today’s dinner options</h3>
 				<hr class="lines">
-				<!-- <div id="piechart"></div>-->
+				<canvas id="pie-chart" class="dinner"></canvas>
 			</div>
 		</main>	
 
@@ -56,3 +59,11 @@
 
 	</body>
 </html>
+
+
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+		<script src="scripts/travelled_distance.js"></script>
+		<script src="scripts/pie_donut.js"></script>
+		<script src="scripts/food_drinks.js"></script>
+		<script src="scripts/dinner.js"></script>
