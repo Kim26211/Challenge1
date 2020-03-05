@@ -43,20 +43,40 @@ h4 {
 	padding-bottom: 8px;
 }
 
+.dag {
+	font-size: 14px;
+	display: flex;
+	justify-content: flex-end;
+	letter-spacing: 0.6px;
+	text-decoration: underline;
+	margin-top: -28px;
+	font-family: roboto mono;
+	font-weight: 600;
+} 
+
+.km-tekst {
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 1px;
+	font-weight: 100px;
+	margin: 0px 0px 0px 0px;
+}
 
 /* Data styles */
 
 .dinner{
-	margin-top: -26px;
+	margin: auto;
 }
 
 .travel{
-	margin-top: -26px;
+	margin: auto;		
 }
 
 .drinks{
 	max-width: 100%;
 }
+
+
 
 
 
@@ -91,32 +111,10 @@ h4 {
 	width: 100%;
 }
 
-
 .column-2{
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
-
-
-.dag {
-	font-size: 14px;
-	display: flex;
-	justify-content: flex-end;
-	letter-spacing: 0.6px;
-	text-decoration: underline;
-	margin-top: -28px;
-	font-family: roboto mono;
-	font-weight: 600;
-} 
-
-.km-tekst {
-	font-size: 16px;
-	line-height: 20px;
-	letter-spacing: 1px;
-	font-weight: 100px;
-	margin: 0px 0px 0px 0px;
-}
-
 
 
 /* Ipad screens */
@@ -129,12 +127,11 @@ h4 {
 
 	.row {
 		justify-content: center;
-		align-items: center;
 	} 
 
 	.column-1 {
 		flex-direction: column;
-		width: 60%;
+		width: 80%;
 		padding: 30px 30px 50px 25px;
 	}
 
@@ -142,14 +139,13 @@ h4 {
 	  font-size: 22px;
 	}
 
-
 	body{
 	margin: 60px 55px 44px 55px;
 	}
 
 	.doughnut{
 	height: 100px;
-
+	margin: auto;
 	}
 
 	h4 {
@@ -167,17 +163,10 @@ h4 {
 		font-size: 16px;
 	}
 
-	.travel{
-	margin-top: -26px;
-	min-height: 350px;
-	max-width: 100%;
-}
 	.dinner{
-	margin-top: -26px;
+	margin: auto;
 	max-width: 400px;
 	max-height: 400px;
-	margin-left: 18%;
-
 	}
 
 }
@@ -185,7 +174,9 @@ h4 {
 /* Medium screens */
 @media only screen and (min-width: 1026px){
 	.doughnut{
-	margin-left: 8px;}
+	margin: auto;
+	height: 100%;
+	}
 
 	body{
 	margin: 44px 90px 44px 90px;
@@ -198,10 +189,6 @@ h4 {
 
 	.drinks{
 		margin-top: 50px;
-	}
-
-	.main3{
-	height: 90%;
 	}
 
 	.main4{	
@@ -242,16 +229,13 @@ h4 {
 	font-size: 18px;
 	}
 
-	.main3{
-	height: 95%;
-	}
-
 	.main4{	
 	height: 90%;
 	}
 
 	.dag{
 		font-size: 18px;
+		
 	}
 
 

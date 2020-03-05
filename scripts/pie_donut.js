@@ -2,7 +2,7 @@
 new Chart(document.getElementById("doughnut-chart"), {
     type: 'doughnut',
     data: {
-      /*labels: ["Completed", "Uncomleted"],*/
+      labels: ["Completed distance", "Uncomleted distance"],
       datasets: [
         {
           label: "Completed Journey",
@@ -11,9 +11,16 @@ new Chart(document.getElementById("doughnut-chart"), {
         }
       ]
     },
-    options: {
-      
-    }
+     options: {
+          title: {
+            display: true,
+            verticalAlign: 'middle',
+            floating: true
+               }
+          legend: {
+              display: false
+              }
+        }
 });
 
 

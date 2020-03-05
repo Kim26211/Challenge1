@@ -10,9 +10,23 @@
           }]
         },
         options: {
-          title: {
-            display: true,
-            text: ''
-          }
+          legend: {
+              display: true,
+            position: 'bottom',
+              labels: {
+                  fontColor: 'white',
+                  fontSize: 16,
+                  fontFamily: 'helvetica',
+                  boxWidth: 15,
+              }
+        },
+        layout: {
+            padding: {
+                left: 0,
+                right: 0,
+                top: 15,
+                bottom: 20
+            }
         }
+      }
     });
