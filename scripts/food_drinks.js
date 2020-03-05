@@ -19,6 +19,13 @@
     },
     
     options: {
+          title: {
+            display: true,
+            text: 'y - axis = %',
+            fontColor: 'white',
+            fontSize: 14,
+            fontFamily: 'roboto mono',
+          },
           legend: {
               display: true,
               align: 'start',
@@ -37,7 +44,7 @@
             padding: {
                 left: 16,
                 right: 30,
-                top: 10,
+                top: 0,
                 bottom: 16
             }
         },
