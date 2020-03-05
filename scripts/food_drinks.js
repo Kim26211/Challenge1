@@ -28,17 +28,17 @@
                   fontColor: 'white',
                   fontSize: 14,
                   fontFamily: 'helvetica',
-                  padding: 25,
+                  /*padding: 25,*/
                   pointStyle: true,
                   boxWidth: 15,
               }
         },
         layout: {
             padding: {
-                left: 20,
-                right: 40,
+                left: 16,
+                right: 30,
                 top: 10,
-                bottom: 20
+                bottom: 16
             }
         },
         scales: {

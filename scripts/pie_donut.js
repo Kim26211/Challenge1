@@ -14,9 +14,13 @@ new Chart(document.getElementById("doughnut-chart"), {
      options: {
           title: {
             display: true,
+            text: '74%',
             verticalAlign: 'middle',
-            floating: true
-               }
+            horizontalAlign: 'middle',
+            floating: true,
+            fontColor: 'white',
+            fontSize: 18,
+               },
           legend: {
               display: false
               }

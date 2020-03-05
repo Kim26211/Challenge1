@@ -15,7 +15,7 @@
             position: 'bottom',
               labels: {
                   fontColor: 'white',
-                  fontSize: 16,
+                  fontSize: 15,
                   fontFamily: 'helvetica',
                   boxWidth: 15,
               }

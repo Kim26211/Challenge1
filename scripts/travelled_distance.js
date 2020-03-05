@@ -28,16 +28,16 @@
                     fontSize: 14,
                     fontFamily: 'helvetica',
                     boxWidth: 15,
-                    padding: 25,
+                    
                     /*fontFamily: 'roboto mono',*/  
                 }
             },
             layout: {
             padding: {
-                left: 20,
-                right: 40,
+                left: 15,
+                right: 30,
                 top: 10,
-                bottom: 20
+                bottom: 16
             }
         },
         scales: {
